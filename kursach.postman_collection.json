@@ -1,0 +1,295 @@
+{
+	"info": {
+		"_postman_id": "1652e801-0f83-41fc-a69b-86d7db255c71",
+		"name": "kursach",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21146945"
+	},
+	"item": [
+		{
+			"name": "http://k-shutova.xn--80ahdri7a.site/api/register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"first_name\": \"Даркхолм\",\r\n    \"last_name\": \"Ван\",\r\n    \"login\": \"DUNGEON MASTER\",\r\n    \"email\": \"MASTER@gmail.com\",\r\n    \"phone\": \"+78005553554\",\r\n    \"password\": \"master\",\r\n    \"age\": \"50\",\r\n    \"pol\": \"М\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://k-shutova.xn--80ahdri7a.site/api/register",
+					"protocol": "http",
+					"host": [
+						"k-shutova",
+						"xn--80ahdri7a",
+						"site"
+					],
+					"path": [
+						"api",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://k-shutova.xn--80ahdri7a.site/api/auth",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"login\": \"DUNGEON MASTER\",\r\n    \"password\": \"master\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://k-shutova.xn--80ahdri7a.site/api/auth",
+					"protocol": "http",
+					"host": [
+						"k-shutova",
+						"xn--80ahdri7a",
+						"site"
+					],
+					"path": [
+						"api",
+						"auth"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://k-shutova.xn--80ahdri7a.site/api/add",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"t_name\": \"Вода св источник\",\r\n    \"date_start\": \"2022-05-14\",\r\n    \"date_end\": \"2023-08-07\",\r\n    \"num\": \"200\"\r\n}\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://k-shutova.xn--80ahdri7a.site/api/add",
+					"protocol": "http",
+					"host": [
+						"k-shutova",
+						"xn--80ahdri7a",
+						"site"
+					],
+					"path": [
+						"api",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://k-shutova.xn--80ahdri7a.site/api/red_prod/2",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"t_name\": \"Хлебъ\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://k-shutova.xn--80ahdri7a.site/api/red_prod/3",
+					"protocol": "http",
+					"host": [
+						"k-shutova",
+						"xn--80ahdri7a",
+						"site"
+					],
+					"path": [
+						"api",
+						"red_prod",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://k-shutova.xn--80ahdri7a.site/api/del_prod/2",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://k-shutova.xn--80ahdri7a.site/api/del_prod/8",
+					"protocol": "http",
+					"host": [
+						"k-shutova",
+						"xn--80ahdri7a",
+						"site"
+					],
+					"path": [
+						"api",
+						"del_prod",
+						"8"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://k-shutova.xn--80ahdri7a.site/api/new_doc",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "WODORFKvvW-ulSJD7bBb2ilhNA1OjTBy",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id_u",
+							"value": "9",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"type": "file",
+							"src": "ШАРАГА/4 курс/7 сем/кроссфит.docx"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://k-shutova.xn--80ahdri7a.site/api/new_doc",
+					"protocol": "http",
+					"host": [
+						"k-shutova",
+						"xn--80ahdri7a",
+						"site"
+					],
+					"path": [
+						"api",
+						"new_doc"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://k-shutova.xn--80ahdri7a.site/api/check",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "WODORFKvvW-ulSJD7bBb2ilhNA1OjTBy",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id_t\":\"3\",\r\n    \"id_u\":\"9\",\r\n    \"date_start\":\"ОК\",\r\n    \"date_end\":\"ОК\",\r\n    \"num\":\"300\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://k-shutova.xn--80ahdri7a.site/api/check",
+					"protocol": "http",
+					"host": [
+						"k-shutova",
+						"xn--80ahdri7a",
+						"site"
+					],
+					"path": [
+						"api",
+						"check"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://k-shutova.xn--80ahdri7a.site/api/checkedit/4",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "WODORFKvvW-ulSJD7bBb2ilhNA1OjTBy",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"num\":\"200\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://k-shutova.xn--80ahdri7a.site/api/checkedit/4",
+					"protocol": "http",
+					"host": [
+						"k-shutova",
+						"xn--80ahdri7a",
+						"site"
+					],
+					"path": [
+						"api",
+						"checkedit",
+						"4"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
